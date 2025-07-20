@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree Conventer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="one">
+        <h2>degree to fahrenheit</h2>
+        <div id="inputdiv">
+            <input type="text" placeholder="Enter degree" id="input"></div>
+            <div> <button type="submit" onclick="convert()">Convert to fahrenheit</button>
+            </div><div id="result">
+
+            </div>
+            <script>
+                function convert()
+                {
+                    let degreeVal = Number(document.getElementById("input").value)
+                    let fahrenheitVal = (degreeVal*9/5)+32
+                    let result = document.getElementById("result")
+                    result.innerHTML = fahrenheitVal.toFixed(2)+"Fahrenheit"
+                    
+                }
+            </script>
+        
+    </div>
+</body>
+</html>
